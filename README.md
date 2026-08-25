@@ -1,8 +1,8 @@
-# Vault Code Guessing Game
+Vault Code Guessing Game
 
 A command-line number guessing game written in C, built for GSU's CSC 3320 (Systems Programming). The program generates a random 3-digit code, and the player has 8 tries to guess it, getting feedback after each attempt on how close they are.
 
-## How it works
+How it works
 
 Each guess gets three pieces of feedback:
 
@@ -23,14 +23,14 @@ Too high, 0 digits are correct and in the right place, 2 digits are correct and 
 You opened the vault!
 ```
 
- How to build and run
+How to build and run
 
 ```
 gcc cardenas_mario_minigame.c -o vault_game -std=gnu89 -Wall
 ./vault_game
 ```
 
- Techniques used
+Techniques used
 
 - **Modular design** — the program is split into focused functions (`generateSecretCode`, `parseGuessDigits`, `compareGuess`, etc.) rather than one large `main()`, each with a single responsibility
 - **Input validation** — guesses are checked for correct length and confirmed to be all digits before being processed, rejecting malformed input without crashing
